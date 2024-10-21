@@ -1,7 +1,6 @@
 package com.example.springcallback.lifecycle;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
 public class InterfaceCallback {
 
@@ -13,9 +12,13 @@ public class InterfaceCallback {
         MyBean myBean = context.getBean(MyBean.class);
         myBean.doSomething();
 
+        // Bean 소멸 전 필드
         System.out.println(myBean.getData());
+
         // 컨테이너 종료 (DisposableBean 호출됨)
         context.close();
+
+        // Bean 소멸 후 필드
         System.out.println(myBean.getData());
     }
 

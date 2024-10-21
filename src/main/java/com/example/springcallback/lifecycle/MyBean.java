@@ -2,7 +2,6 @@ package com.example.springcallback.lifecycle;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.stereotype.Component;
 
 public class MyBean implements InitializingBean, DisposableBean {
 
