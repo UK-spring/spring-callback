@@ -9,7 +9,7 @@ public class SingletonAppConfig {
 
     @Scope("singleton")
     @Bean
-    public SingletonBean myBeanV3() {
+    public SingletonBean singletonBean() {
         SingletonBean singletonBean = new SingletonBean();
         return singletonBean;
     }
