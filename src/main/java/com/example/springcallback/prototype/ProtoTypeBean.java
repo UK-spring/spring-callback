@@ -1,12 +1,12 @@
-package com.example.springcallback.singleton;
+package com.example.springcallback.prototype;
 
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 
-public class SingletonBean {
+public class ProtoTypeBean {
 
-    public SingletonBean() {
+    public ProtoTypeBean() {
         System.out.println("Bean 생성자 호출");
     }
 
@@ -23,7 +23,7 @@ public class SingletonBean {
     }
 
     public void doSomething() {
-        System.out.println("SingletonBean 작업 중...");
+        System.out.println("ProtoTypeBean 작업 중...");
     }
 
 }
