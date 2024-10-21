@@ -10,6 +10,11 @@ public class Singleton {
 
         // Bean 사용
         SingletonBean singletonBean = context.getBean(SingletonBean.class);
+        SingletonBean singletonBean2 = context.getBean(SingletonBean.class);
+
+        System.out.println("singletonBean = " + singletonBean);
+        System.out.println("singletonBean2 = " + singletonBean2);
+
         singletonBean.doSomething();
 
         // 컨테이너 종료
