@@ -24,7 +24,7 @@ public class MyBeanV3 {
     // 초기화 메서드
     @PostConstruct
     public void init() {
-        System.out.println("MyBean 초기화 - afterPropertiesSet() 호출됨");
+        System.out.println("MyBean 초기화 - init() 호출됨");
         System.out.println("data = " + data);
     }
 
