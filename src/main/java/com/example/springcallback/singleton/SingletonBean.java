@@ -1,4 +1,4 @@
-package com.example.springcallback.scope;
+package com.example.springcallback.singleton;
 
 
 import jakarta.annotation.PostConstruct;

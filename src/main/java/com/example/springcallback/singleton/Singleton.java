@@ -1,4 +1,4 @@
-package com.example.springcallback.scope;
+package com.example.springcallback.singleton;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
