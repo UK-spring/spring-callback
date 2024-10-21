@@ -15,7 +15,7 @@ public class InterfaceCallbackV3 {
         // Bean 소멸 전 필드
         System.out.println(myBeanV3.getData());
 
-        // 컨테이너 종료 (DisposableBean 호출됨)
+        // 컨테이너 종료 (destroy 호출)
         context.close();
 
         // Bean 소멸 후 필드
